@@ -1,3 +1,5 @@
+const calculo = require('../lib/calculaSalario');
+
 describe('Calcular Salário', () => {
     test('Desenvolvedor', () => {
 
@@ -10,8 +12,10 @@ describe('Calcular Salário', () => {
 
         result = calculo(funcionario);
 
-        expect((result.desconto).toEqual(0.1));
+        expect(result.desconto).toBe(200);
 
-        expect((result.liquido).toEqual(1800));
+        expect(result.taxa).toBe(0.1);
+
+        expect(result.liquido).toBe(1800);
     });
 });
