@@ -16,4 +16,20 @@ describe('Calcular Salário', () => {
         expect(result.taxa).toBe(0.1);
         expect(result.liquido).toBe(1800);
     });
+
+    test('DBA', () => {
+
+        const funcionario = {
+            nome: "Carlos",
+            email: "carlos@gmail.com",
+            salarioBase: 4000,
+            cargo: "DBA"
+        }
+
+        result = calculo(funcionario);
+
+        expect(result.desconto).toBe(1000);
+        expect(result.taxa).toBe(0.25);
+        expect(result.liquido).toBe(3000);
+    });
 });
