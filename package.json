@@ -1,0 +1,22 @@
+{
+  "name": "tdd-exercicio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pedrorreiro/tdd-exercicio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pedrorreiro/tdd-exercicio/issues"
+  },
+  "homepage": "https://github.com/pedrorreiro/tdd-exercicio#readme",
+  "dependencies": {
+    "jest": "^27.2.5"
+  }
+}
